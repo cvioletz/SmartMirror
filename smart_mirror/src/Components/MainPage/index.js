@@ -1,14 +1,13 @@
 import React from 'react';
-import Clock from '../Clock'; 
-import Greeting from '../Greeting';
+import Date from '../Date'
 
 
 const MainPage = ()=> {
     
     return(
         <div>
-            <Greeting />
-            <Clock />
+            <Date />
+            
         </div>
     ); 
 }

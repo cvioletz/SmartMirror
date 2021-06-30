@@ -1,14 +1,34 @@
-import MainPage from "./Components/MainPage"; 
-import Date from "./Components/Date"; 
 
+import DateComponent from "./Components/DateComponent"; 
+import TimeComponent from "./Components/TimeComponent";
+import WeatherComponent from "./Components/WeatherComponent"
 // this is the first component that will render and calls the MainPage Component
+const styleSheet={
+    parent:{
+        display:'flex',
+        justifyContent:"space-between"
+    },
+    weather: {
+        
 
+    },
 
-function App() {
+    clock:{
+       
+    }
+}
+
+const App=()=> {
     return(
-        <>
-            <Date />
-            </>
+       <div> 
+           <div style = {styleSheet.parent}>
+            <div><DateComponent/></div>
+            <div><WeatherComponent/></div>
+    
+
+            </div> 
+            <div><TimeComponent/></div>
+        </div>
     )
 }
 
